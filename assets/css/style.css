@@ -1,25 +1,92 @@
+
 body {
-    background-image: "";
-    
+    background-repeat: false;
+    background-size: 100%;
 }
+main{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+h1 {
+    margin-top: 20vh;
+    font-family:sofiaSans;
+    font-size:50pt;
+    font-weight: bold;
+}
+
+section {
+    align-content: center;
+}
+
+article{
+    align-content: center;
+    text-wrap:wrap;
+    max-width: 30vw;
+    text-align: center;
+    font-size: 20pt;
+    font-family: sofiaSans;
+}
+
+#icons-article{
+    display:block;
+    text-wrap: nowrap;
+}
+
+.icon {
+    width:50px;
+    height:50px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 5vh;
+}
+
+p{
+    margin-bottom: 7vh;
+}
+
+button {
+    border: 0px;
+    font-family: sofiaSans;
+    font-size: 25pt;
+}
+
+#all-button{
+    background-color: yellow;
+}
+
+#art-button{
+    background-color: red;
+}
+
+#design-button{
+    background-color: pink;
+}
+
+#programming-button{
+    background-color: lime;
+}
+
+#other-button{
+    background-color: lightblue;
+}
+
+#projects-space {
+    background-color: yellow;
+    width: 100%;
+    min-height: 90vh;
+}
+
 
 @font-face {
     font-family:sofiaSans;
     src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
-    font-weight: 5;
 }
-
-
-h1 {
-
-    font-family:sofiaSans;
-    font-size:35px;
-    font-weight: bold;
-}
-
-
-
-
 
 
 
