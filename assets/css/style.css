@@ -1,0 +1,25 @@
+body {
+    background-image: "";
+    
+}
+
+@font-face {
+    font-family:sofiaSans;
+    src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
+    font-weight: 5;
+}
+
+
+h1 {
+
+    font-family:sofiaSans;
+    font-size:35px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
