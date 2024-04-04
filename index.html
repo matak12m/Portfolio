@@ -48,25 +48,36 @@
 
         <section id = "folder-buttons">
 
-        <button id = "all-button"> All </button>
-        <button id = "art-button"> Art </button>
-        <button id = "design-button"> Design </button>
-        <button id = "programming-button"> Programming </button>
-        <button id = "other-button"> Other </button>
-
-
-
-
-
+        <button id = "all-button" onclick="sortProjects('all')"> All </button>
+        <button id = "art-button" onclick="sortProjects('art')"> Art </button>
+        <button id = "design-button" onclick="sortProjects('design')"> Design </button>
+        <button id = "programming-button" onclick="sortProjects('programming')"> Programming </button>
+        <button id = "other-button" onclick="sortProjects('other')"> Other </button>
 
         </section>
+
 
         <section id = "projects-space">
+            
+            <article class = "project project-card-visible" name = "all art"> Art project</article>
 
+
+            <article class = "project project-card-visible" name = "all programming"> Cheat Your Way Through</article>
+
+
+            <article class = "project project-card-visible" name = "all art design"> Clowning Around</article>
+
+
+            <article class = "project project-card-visible" name = "all design"> This website</article>
+
+
+            <article class = "project project-card-visible" name = "all other"> Erootica</article>
        
 
         </section>
 
        
+        <script src = "assets/js/script.js"> </script> 
+
     </body>
 </html>
