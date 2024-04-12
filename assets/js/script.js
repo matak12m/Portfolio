@@ -42,3 +42,12 @@ function sortProjects(projType) {
             }
 
 }
+
+
+
+
+
+function copyEmail() {
+ navigator.clipboard.writeText("matak12m@seznam.cz");
+ alert("email copied!")
+}
