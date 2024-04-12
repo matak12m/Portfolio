@@ -35,8 +35,8 @@ article{
 
 #icons-article{
     display:block;
-    text-wrap: nowrap;
-    background-image: url("assets/img/yellow frame.png")
+    max-height: 50px;
+
 }
 
 .icon {
@@ -63,7 +63,7 @@ button:hover{
 }
 
 #all-button{
-    background-color: yellow;
+    background-color: rgb(255,204,0);
 }
 
 #art-button{
@@ -75,7 +75,7 @@ button:hover{
 }
 
 #programming-button{
-    background-color: lime;
+    background-color: rgb(27, 192, 27);
 }
 
 #other-button{
@@ -83,7 +83,7 @@ button:hover{
 }
 
 #projects-space {
-    background-color: rgb(243, 223, 44);
+    background-color: rgb(255,204,0);
     width: 100%;
     min-height: 90vh;
     display:flex;

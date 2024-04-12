@@ -1,5 +1,5 @@
 
-
+let projectSpace = document.getElementById("projects-space")
 
 let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
 
@@ -15,14 +15,28 @@ function sortProjects(projType) {
 
    
     
-        let selectedProj = document.getElementsByName(projType)
-        console.log(allProj);
+        
 
+            if (projType.includes('all')) {
+                projectSpace.style.backgroundColor = 'rgb(255,204,0)';
+            }
+            else if (projType.includes('art')) {
+                projectSpace.style.backgroundColor = 'red';
+            }
+            else if (projType.includes('design')) {
+                projectSpace.style.backgroundColor = 'pink';
 
+            }
+            else if (projType.includes('programming')) {
+                projectSpace.style.backgroundColor = 'rgb(27, 192, 27)';
+            }
+            else if (projType.includes('other')) {
+                projectSpace.style.backgroundColor = 'lightblue';
+            }
 
 
             for (i = 0; i < allProj.length; i++) {
-                console.log("iterating");
+                //console.log("iterating");
 
                 projName = allProj[i].getAttribute("name");
 
@@ -31,15 +45,16 @@ function sortProjects(projType) {
                     
                     allProj[i].className = 'project project-card-visible';
                     
-                    console.log("making a project visible");
+                    //console.log("making a project visible");
 
                 }
                 else {
                     
                     allProj[i].className = 'project project-card-hidden';
-                    console.log("making a project hidden");
+                    //console.log("making a project hidden");
                 }
             }
+            
 
 }
 
