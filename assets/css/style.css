@@ -91,31 +91,71 @@ button:hover{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
+    align-items: center;
+    transition-duration: 0.25s;
+}
+
+img {
+    max-height: 35vh;
+
+}
+
+
+#img1 {
+    margin:auto;
+    max-height: none;
+    float: left;
+    width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
 }
 
 .project {
     background-color: aliceblue;
     display:block;
+    min-width: 100px;
+    min-height: 100px;
+    height: 40vh;
+    transition-duration: 0.5s;
+    
+
 }
 
 .project-card-visible {
-    min-width: 100px;
-    min-height: 100px;
+    
     margin: 10px;
+  
 }
 
 .project-card-hidden {
     display: none;
     visibility: hidden;
+  
 }
 
 .project-card-expanded {
+
    
+ 
+   
+    margin:auto;
     width:90%;
     height:100%;
-    margin:auto;
+
     max-width: none;
     max-height: none;
+
+    
+   
+}
+
+#text1 {
+    width: 50%;
+    float: left;
+}
+#text2 {
+    width: 50%;
+    float: left;
 }
 
 @font-face {
