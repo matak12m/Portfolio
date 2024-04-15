@@ -1,5 +1,8 @@
 
 let projectSpace = document.getElementById("projects-space")
+let mainInfo = document.getElementById("info")
+let buttonsSection = document.getElementById("folder-buttons")
+let projectsSection = document.getElementById("projects-space")
 
 let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
 
@@ -65,4 +68,37 @@ function sortProjects(projType) {
 function copyEmail() {
  navigator.clipboard.writeText("matak12m@seznam.cz");
  alert("email copied!")
+}
+
+let currentProject; //stores the current element being expanded
+
+
+function expandProject(projectCard) {
+    console.log("expanding project")
+    //expand the card and append text, images
+    //change the css to project-card-expanded
+    //add event listener for clicks outside the project card - main + the 2 following sections?
+    
+
+    if (projectCard.includes("GGJ24")) {
+        currentProject = document.getElementById("GGJ24")
+        currentProject.className = 'project project-card-expanded'
+        currentProject.innerHTML = "surprise!"  // fill in actual content of the card. remove in minimizeProject()
+        console.log("expanding GGJ24")
+
+    }
+    //listen for click anywhere outside the expanded project card - elements outside it
+    mainInfo.addEventListener("click",minimizeProject);
+    buttonsSection.addEventListener("click",minimizeProject);
+}
+
+
+
+function minimizeProject() {
+    console.log("minimizing project")
+    //return the project to its menu form
+    currentProject.className = 'project project-card-visible'
+    mainInfo.removeEventListener("click",minimizeProject); 
+    buttonsSection.removeEventListener("click",minimizeProject);
+
 }

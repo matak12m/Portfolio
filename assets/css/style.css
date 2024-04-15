@@ -55,6 +55,7 @@ button {
     border: 0px;
     font-family: sofiaSans;
     font-size: 25pt;
+    border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -86,18 +87,21 @@ button:hover{
     background-color: rgb(255,204,0);
     width: 100%;
     min-height: 90vh;
+    border-radius: 0px 10px 10px 10px;
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
+.project {
+    background-color: aliceblue;
+    display:block;
+}
 
 .project-card-visible {
     min-width: 100px;
     min-height: 100px;
-    background-color: aliceblue;
     margin: 10px;
-    display:block;
 }
 
 .project-card-hidden {
@@ -105,6 +109,14 @@ button:hover{
     visibility: hidden;
 }
 
+.project-card-expanded {
+   
+    width:90%;
+    height:100%;
+    margin:auto;
+    max-width: none;
+    max-height: none;
+}
 
 @font-face {
     font-family:sofiaSans;
