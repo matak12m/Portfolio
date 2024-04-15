@@ -91,12 +91,14 @@ button:hover{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    align-items: center;
+    align-items: flex-start;
+
     transition-duration: 0.25s;
 }
 
 img {
-    max-height: 35vh;
+    max-height: 25vh;
+    max-width: 30vw;
 
 }
 
@@ -116,7 +118,8 @@ img {
     display:block;
     min-width: 100px;
     min-height: 100px;
-    height: 40vh;
+    
+    height: 30vh;
     transition-duration: 0.5s;
     
 
@@ -125,7 +128,7 @@ img {
 .project-card-visible {
     
     margin: 10px;
-  
+    max-width: 30vw;
 }
 
 .project-card-hidden {
