@@ -108,6 +108,7 @@ img {
     width: 30%;
     padding-left: 35%;
     padding-right: 35%;
+    margin-bottom: 50px;
 }
 
 .project {
@@ -141,21 +142,15 @@ img {
     margin:auto;
     width:90%;
     height:100%;
-
     max-width: none;
     max-height: none;
-
-    
    
 }
 
-#text1 {
-    width: 50%;
+.textExpanded {
     float: left;
-}
-#text2 {
-    width: 50%;
-    float: left;
+    width: 45%;
+    margin:2.5%;
 }
 
 @font-face {

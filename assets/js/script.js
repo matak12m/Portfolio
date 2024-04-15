@@ -77,16 +77,21 @@ function expandProject(projectCard) {
     console.log("expanding project")
     //expand the card and the inner HTML of the card
     //change the css to project-card-expanded
-    //add event listener for clicks outside the project card - main + the 2 following sections?
+    //add event listener for clicks outside the project card space
+    //change css of all other project cards to hide them
     
 
     if (projectCard.includes("GGJ24")) {
 
 
         currentProject = document.getElementById(projectCard)
-        storedHTML = currentProject.innerHTML;  //stores the HTML to be restored once the project is minimized
+
+        
+        storedHTML = '<img src = "assets/img/clowning-around.png"> <br> Global Game Jam 2024'  //stores the minimized version of the card
+        
+
         currentProject.className = 'project project-card-expanded'
-        currentProject.innerHTML = '<a><img id = "img1" src = "assets/img/clowning-around.png"> </a> <section id = "text1"> For Global Game Jam 2024, the theme was: "Make Me Laugh". I came forward with an idea for a puzzle platformer, where you play as a clown in a circus world. You can make a clown joke (honk your nose) near the resident walking mouths to make them laugh, which creates a physical HaHa, which can interact with the environment - pop balloons, break platform, etc. </section><section id = "text2">My role on the team was being the Artist and Creative Lead. <br>Our team ended up winning a "Best use of theme" award at the end of the weekend. <br>You can check the project out <a href ="https://github.com/JackNulty/ClowningAround"> here! </a> </section>'
+        currentProject.innerHTML = ClowningAroundHTML
 
         for (i = 0; i < allProj.length; i++) {  //hides all other project cards
             console.log("iterating");
