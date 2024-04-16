@@ -35,20 +35,21 @@ article{
 #icons-article{
     display:block;
     max-height: 50px;
-
+    min-width: 400px;
 
 }
 
 .icon {
     width:50px;
     height:50px;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 5vh;
 }
 
 p{
     margin-bottom: 7vh;
+    margin:auto;
 }
 
 button {
@@ -180,11 +181,47 @@ img {
 
     main {
         display:block;
-        display:flex;
+
         flex-wrap:unset;
         align-content:center;
         flex-direction:unset;
+        text-align: center;
+        
 
+    }
+    section {
+        text-align: center;
+    }
+    #header-icons {
+        align-items: center;
+    }
+    button {
+        text-align: center;
+    }
+    #all-button {
+        width:12.5vw;
+    }
+    #art-button {
+        width: 12.5vw;
+    }
+    #design-button {
+        width: 17.5vw;
+    }
+    #programming-button {
+        width: 30vw;
+    }
+    #other-button {
+        width: 17.5vw;
+    }
+
+
+    h1 {
+        margin: 100%
+
+    }
+
+    #icons-article {
+        margin:auto;
     }
 
     article {
