@@ -96,7 +96,7 @@ function expandProject(projectCard) {
         currentProject.innerHTML = ClowningAroundHTML
 
         for (i = 0; i < allProj.length; i++) {  //hides all other project cards
-            console.log("iterating");
+         
 
             projName = allProj[i].getAttribute("id");
 
@@ -123,7 +123,7 @@ function expandProject(projectCard) {
         currentProject.innerHTML = ErooticaHTML;
 
         for (i = 0; i < allProj.length; i++) {  //hides all other project cards
-            console.log("iterating");
+            
 
             projName = allProj[i].getAttribute("id");
 
@@ -137,7 +137,31 @@ function expandProject(projectCard) {
             }
         } 
     }
+    else if (projectCard.includes("Hooked")) {
 
+        currentProject = document.getElementById(projectCard)
+
+        
+        storedHTML = '<img src = "assets/img/shopWithItems.png"> <br> Hooked!'  //stores the minimized version of the card
+        
+
+        currentProject.className = 'project project-card-expanded'
+        currentProject.innerHTML = HookedHTML;
+
+        for (i = 0; i < allProj.length; i++) {  //hides all other project cards
+           
+            projName = allProj[i].getAttribute("id");
+
+            if (projName.includes("Hooked")){  
+                //do nothing
+            }
+            else {
+                
+                allProj[i].className = 'project project-card-hidden';
+               
+            }
+        } 
+    }
 
 
     //listen for click anywhere outside the expanded project card - elements outside it

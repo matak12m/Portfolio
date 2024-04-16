@@ -114,13 +114,21 @@ img {
     margin-bottom: 50px;
 }
 
+#img-large {
+    width: 95%;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    float: left;
+}
+
 .project {
     background-color: aliceblue;
     display:block;
     min-width: 100px;
     min-height: 100px;
     
-    height: 30vh;
+    max-height: 30vh;
     
 
 }
@@ -153,6 +161,7 @@ img {
     float: left;
     width: 45%;
     margin:2.5%;
+    height:fit-content;
 }
 
 @font-face {
