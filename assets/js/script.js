@@ -9,13 +9,15 @@ let allProj = document.getElementsByClassName("project"); //project is a standal
 console.log(allProj);
 
 let projName;
+let CurrentProjType = "all"
+
 
 function sortProjects(projType) {
     //changes the visibility of projects in the "projects" space depending on what type they are
     //each button shows a different array of projects
     //the function changes the classes of the elements instead of changing the style directly
     console.log("sorting projects, " + projType)
-
+    CurrentProjType = projType;
    
     
         
@@ -111,6 +113,29 @@ function expandProject(projectCard) {
     }
     else if (projectCard.includes("GGJ23")) {
 
+        currentProject = document.getElementById(projectCard)
+
+        
+        storedHTML = '<img src = "assets/img/Erootica.png"> <br>Global Game Jam 2023'  //stores the minimized version of the card
+        
+
+        currentProject.className = 'project project-card-expanded'
+        currentProject.innerHTML = ErooticaHTML;
+
+        for (i = 0; i < allProj.length; i++) {  //hides all other project cards
+            console.log("iterating");
+
+            projName = allProj[i].getAttribute("id");
+
+            if (projName.includes("GGJ23")){  
+                //do nothing
+            }
+            else {
+                
+                allProj[i].className = 'project project-card-hidden';
+               
+            }
+        } 
     }
 
 
@@ -126,10 +151,24 @@ function minimizeProject() {
     console.log("minimizing project")
     //return the project to its menu form
 
-    for (i = 0; i < allProj.length; i++) {  //resets all projects to default
-        console.log("iterating");
+    for (i = 0; i < allProj.length; i++) {
+        //console.log("iterating");
 
-       allProj[i].className = 'project project-card-visible'
+        projName = allProj[i].getAttribute("name");
+
+        if (projName.includes(CurrentProjType)){  //checks if the name of the project includes the keyword
+
+            
+            allProj[i].className = 'project project-card-visible';
+            
+            //console.log("making a project visible");
+
+        }
+        else {
+            
+            allProj[i].className = 'project project-card-hidden';
+            //console.log("making a project hidden");
+        }
     } 
 
     currentProject.innerHTML = storedHTML;

@@ -87,6 +87,7 @@ button:hover{
     background-color: rgb(255,204,0);
     width: 100%;
     min-height: 90vh;
+    height:fit-content;
     border-radius: 0px 10px 10px 10px;
     display:flex;
     flex-direction: row;
@@ -120,7 +121,6 @@ img {
     min-height: 100px;
     
     height: 30vh;
-    transition-duration: 0.5s;
     
 
 }
@@ -139,11 +139,10 @@ img {
 
 .project-card-expanded {
 
-   
- 
-   
     margin:auto;
-    width:90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:95%;
     height:100%;
     max-width: none;
     max-height: none;
