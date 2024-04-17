@@ -25,6 +25,9 @@ section {
     align-content: center;
     text-align: center;
 }
+#folder-buttons {
+    text-align: left;
+}
 
 article{
     align-content: center;
