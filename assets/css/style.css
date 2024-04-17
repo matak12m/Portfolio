@@ -1,6 +1,7 @@
 
 body {
-    background-repeat: false;
+    
+    background-image: url(../img/splotches.png);
     background-size: 100%;
 }
 main{
@@ -22,6 +23,7 @@ h1 {
 
 section {
     align-content: center;
+    text-align: center;
 }
 
 article{
@@ -175,8 +177,8 @@ img {
 @media(max-width: 805px) {
 
     body {
-        background-size: 200%;
-        background-position: -30%, 0px;
+        background-image: url(../img/splotchesMobile.png);
+        
     }
 
     main {
@@ -191,6 +193,12 @@ img {
     }
     section {
         text-align: center;
+
+    }
+    #text {
+        
+        margin-right: 10vw;
+        margin-right: 10vw;
     }
     #header-icons {
         align-items: center;
@@ -225,7 +233,7 @@ img {
     }
 
     article {
-        font-size: 40pt;
+        font-size: 25pt;
     }
     p{
         width: 90vw;

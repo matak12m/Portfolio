@@ -1,8 +1,20 @@
+//known bugs: 
+//aboutMe() doesn't allow for getting rid of the text upon second call, yet.
+
+
+
+
 
 let projectSpace = document.getElementById("projects-space")
 let mainInfo = document.getElementById("info")
 let buttonsSection = document.getElementById("folder-buttons")
 let projectsSection = document.getElementById("projects-space")
+
+let aboutMeArticle = document.getElementById("aboutMe")
+let learnMoreText = document.getElementById("learnMore")
+
+
+
 
 let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
 
@@ -184,4 +196,35 @@ function minimizeProject() {
     mainInfo.removeEventListener("click",minimizeProject); 
     buttonsSection.removeEventListener("click",minimizeProject);
 
+}
+
+let aboutMeCounter = 0;
+function aboutMe() {
+
+    aboutMeCounter++;
+
+    if (aboutMeCounter == 1) {
+        console.log("showing about me")
+        learnMoreText.innerHTML = ' to learn less about me.' // fun little detail
+       
+
+        aboutMeArticle.innerHTML = aboutMeHTML; 
+
+    }
+    else if (aboutMeCounter == 2){
+        console.log("hiding about me")
+        learnMoreText.innerHTML = ' to learn more about me.' // fun little detail
+        
+
+        aboutMeArticle.innerHTML = ""
+        aboutMeCounter = 0;
+
+    }
+    else {
+        console.log("error with about me button")
+    }
+
+    
+
+   
 }
