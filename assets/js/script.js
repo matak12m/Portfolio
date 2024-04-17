@@ -82,85 +82,69 @@ function expandProject(projectCard) {
     //add event listener for clicks outside the project card space
     //change css of all other project cards to hide them
     
+  
+    
+    currentProject = document.getElementById(projectCard);
 
-    if (projectCard.includes("GGJ24")) {
 
+    currentProject.className = 'project project-card-expanded' //expand the proper card
 
-        currentProject = document.getElementById(projectCard)
+    if (projectCard.includes("GGJ24")) {      //change the html of the expanded card
 
-        
         storedHTML = '<img src = "assets/img/clowning-around.png"> <br> Global Game Jam 2024'  //stores the minimized version of the card
-        
-
-        currentProject.className = 'project project-card-expanded'
         currentProject.innerHTML = ClowningAroundHTML
 
-        for (i = 0; i < allProj.length; i++) {  //hides all other project cards
-         
-
-            projName = allProj[i].getAttribute("id");
-
-            if (projName.includes("GGJ24")){  
-                //do nothing
-            }
-            else {
-                
-                allProj[i].className = 'project project-card-hidden';
-               
-            }
-        } 
 
     }
     else if (projectCard.includes("GGJ23")) {
 
-        currentProject = document.getElementById(projectCard)
-
         
         storedHTML = '<img src = "assets/img/Erootica.png"> <br>Global Game Jam 2023'  //stores the minimized version of the card
-        
-
-        currentProject.className = 'project project-card-expanded'
         currentProject.innerHTML = ErooticaHTML;
 
-        for (i = 0; i < allProj.length; i++) {  //hides all other project cards
-            
-
-            projName = allProj[i].getAttribute("id");
-
-            if (projName.includes("GGJ23")){  
-                //do nothing
-            }
-            else {
-                
-                allProj[i].className = 'project project-card-hidden';
-               
-            }
-        } 
+        
     }
     else if (projectCard.includes("Hooked")) {
 
-        currentProject = document.getElementById(projectCard)
 
         
         storedHTML = '<img src = "assets/img/shopWithItems.png"> <br> Hooked!'  //stores the minimized version of the card
-        
-
-        currentProject.className = 'project project-card-expanded'
         currentProject.innerHTML = HookedHTML;
 
-        for (i = 0; i < allProj.length; i++) {  //hides all other project cards
-           
-            projName = allProj[i].getAttribute("id");
+        
+    }
+    else if (projectCard.includes("onTheClock")) {
 
-            if (projName.includes("Hooked")){  
-                //do nothing
-            }
-            else {
-                
-                allProj[i].className = 'project project-card-hidden';
-               
-            }
-        } 
+        
+        storedHTML = '<img src = "assets/img/clock.png"> <br>On the Clock'  //stores the minimized version of the card
+        currentProject.innerHTML = OnTheClockHTML;
+
+        
+    }
+    else if (projectCard.includes("cheatYourWayThrough")) {
+
+        
+        storedHTML = '<img class = "halfImg" src = "assets/img/player-sprite cropped.png"> <img class = "halfImg" src = "assets/img/desk and chair croopped.png"> <br> Cheat Your Way Through'  //stores the minimized version of the card
+        currentProject.innerHTML = CheatYourWayThroughHTML;
+
+        
+    }
+
+    
+    
+
+    for (i = 0; i < allProj.length; i++) {  //hides all other project cards
+           
+        projName = allProj[i].getAttribute("id");
+
+        if (projName.includes(projectCard)){  
+            //do nothing
+        }
+        else {
+            
+            allProj[i].className = 'project project-card-hidden';
+           
+        }
     }
 
 
