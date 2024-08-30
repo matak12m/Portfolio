@@ -13,7 +13,7 @@ let projectsSection = document.getElementById("projects-space")
 let aboutMeArticle = document.getElementById("aboutMe")
 let learnMoreText = document.getElementById("learnMore")
 
-
+let AlertContainer = document.getElementById("alert-container")
 
 
 let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
@@ -81,7 +81,17 @@ function sortProjects(projType) {
 
 function copyEmail() {
  navigator.clipboard.writeText("matak12m@seznam.cz");
- alert("email copied!")
+AlertContainer.style.visibility = "visible";
+AlertContainer.style.opacity = "1";
+
+
+}
+
+function closeAlert(){
+
+    AlertContainer.style.visibility = "hidden";
+    AlertContainer.style.opacity = "0";
+
 }
 
 let currentProject; //stores the current element being expanded

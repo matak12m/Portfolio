@@ -63,6 +63,29 @@ button {
     font-size: 25pt;
     border-radius: 10px 10px 0px 0px;
 }
+.textButton {
+    border-radius: 10px;
+    font-size: 20pt;
+    background-color: none;
+}
+
+#alert-container {
+    font-family: sofiaSans;
+    background-color: pink;
+    align-self: center;
+    text-align: center;
+    font-size: 20pt;
+    width: 300px;
+    min-height: 9vh;
+    height:fit-content;
+    border-radius: 10px;
+    
+    position:fixed;
+    inset:top;
+    visibility:hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
 
 
 button:hover{
@@ -71,22 +94,38 @@ button:hover{
 
 #all-button{
     background-color: rgb(255,204,0);
+
+}
+#all-button:hover{
+    background-color: rgb(192, 154, 0);
 }
 
 #art-button{
     background-color: red;
 }
+#art-button:hover {
+    background-color: rgb(192, 0, 0);
+}
 
 #design-button{
     background-color: pink;
+}
+#design-button:hover {
+    background-color: rgb(188, 138, 146);
 }
 
 #programming-button{
     background-color: rgb(27, 192, 27);
 }
+#programming-button:hover {
+    background-color: rgb(20, 135, 20);
+}
 
 #other-button{
     background-color: lightblue;
+}
+#other-button:hover {
+    background-color: rgb(121, 151, 161);
 }
 
 #projects-space {
@@ -198,7 +237,7 @@ img {
         text-align: center;
 
     }
-    #text {
+    .text {
         
         margin-right: 10vw;
         margin-right: 10vw;

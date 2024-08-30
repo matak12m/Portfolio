@@ -7,14 +7,22 @@
         <title>Matt Martinek Portfolio</title>
         <link href="assets/css/style.css" rel="stylesheet" text="text/css">
        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         
         <main id = "info">
-            <section id = "header-icons">
+            <div id = "alert-container">
+                        <section class = "text">
+                            <p>
+                                Email copied!
+                            </p>
+                            <button class = "textButton" onclick="closeAlert()" >close</button>
+                        </section>
 
+                    </div>
                 <article>
+            <section id = "header-icons">
+            
 
                 <h1>Matt Martinek</h1>
 
@@ -30,7 +38,7 @@
             
                 </article>
             </section>
-            <section id = "text">
+            <section class = "text">
 
                 <article>
                     <p>Hi! you can call me Matt. I'm a student, artist, programmer, and designer. 
@@ -39,7 +47,7 @@
 
                    <p> Scroll down to see some of my work! </p> <br>
 
-                    <p>Or click  <u onclick = "aboutMe()">here</u> <span id = "learnMore"> to learn more about me. </span> </p>
+                    <p>Or click  <button class = "textButton" onclick = "aboutMe()">here</button> <span id = "learnMore"> to learn more about me. </span> </p>
                 </article>
                 <article id = "aboutMe" style = "margin-top: 100px; margin-bottom: 200px;">
 
@@ -79,6 +87,8 @@
 
 
         </section>
+
+        
 
         <script src = "assets/js/storage.js"> </script>
         <script src = "assets/js/script.js"> </script> 
