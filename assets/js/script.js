@@ -161,6 +161,14 @@ function expandProject(projectCard) {
 
         
     }
+    else if (projectCard.includes("ToDoApp")) {
+
+        
+        storedHTML =  '<img src = "assets/img/ToDoAppDesktopLight.png"> <br> To-Do App design'  //stores the minimized version of the card
+        currentProject.innerHTML = ToDoAppHTML;
+
+        
+    }
     
     
 
