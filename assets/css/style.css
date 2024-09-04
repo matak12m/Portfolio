@@ -127,6 +127,15 @@ button:hover{
 #other-button:hover {
     background-color: rgb(121, 151, 161);
 }
+#back-button {
+    float:right;
+    background-color: red;
+    visibility: hidden;
+}
+#back-button:hover {
+    background-color: rgb(192, 0, 0);
+}
+
 
 #projects-space {
     background-color: rgb(255,204,0);
@@ -167,6 +176,7 @@ img {
     max-height: none;
     max-width: none;
     float: left;
+    padding-top: 50px;
 }
 
 .project {

@@ -15,6 +15,8 @@ let learnMoreText = document.getElementById("learnMore")
 
 let AlertContainer = document.getElementById("alert-container")
 
+let BackButton = document.getElementById("back-button");
+
 
 let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
 
@@ -151,7 +153,14 @@ function expandProject(projectCard) {
 
         
     }
+    else if (projectCard.includes("ThreeDArt")) {
 
+        
+        storedHTML =  '<img src = "assets/img/3DGreenhouse.png"> <br> 3D modelling project'  //stores the minimized version of the card
+        currentProject.innerHTML = ThreeDArtHTML;
+
+        
+    }
     
     
 
@@ -173,6 +182,7 @@ function expandProject(projectCard) {
     //listen for click anywhere outside the expanded project card - elements outside it
     mainInfo.addEventListener("click",minimizeProject);
     buttonsSection.addEventListener("click",minimizeProject);
+    BackButton.style.visibility = "visible"
 }
 
 
@@ -205,6 +215,7 @@ function minimizeProject() {
 
     mainInfo.removeEventListener("click",minimizeProject); 
     buttonsSection.removeEventListener("click",minimizeProject);
+    BackButton.style.visibility = "hidden"
 
 }
 
