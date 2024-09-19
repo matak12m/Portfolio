@@ -3,6 +3,7 @@ body {
     
     background-image: url(../img/splotches.png);
     background-size: 100%;
+    
 }
 main{
     display:flex;
@@ -326,11 +327,15 @@ img {
     .project {
         font-size: 30pt;
     }
-
-
-
-
+    
 }
 
+@media(min-width: 1600px) {
 
+    body {
+        background-image: url(../img/splotchesWidescreen.png);
+        
+    }
+
+    }
 
