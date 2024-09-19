@@ -169,6 +169,14 @@ function expandProject(projectCard) {
 
         
     }
+    else if (projectCard.includes("EduSite")) {
+
+        
+        storedHTML =  ' <img src = "assets/img/EduSiteThumbnail.png"> <br> Educational Website design'  //stores the minimized version of the card
+        currentProject.innerHTML = EduSiteHTML;
+
+        
+    }
     
     
 
