@@ -293,6 +293,7 @@ img {
         border-radius: 10px;
         width: 100px;
         height: 75px;
+        font-size: 8vw;
 
     }
 
@@ -356,6 +357,7 @@ img {
         width: 90vw;
         padding-left: 0px;
         padding-right: 0px;
+        min-height: 0px;
     }
 
     .icon {
