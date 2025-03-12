@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Matt Martinek">
-        <title>Matt Martinek Portfolio</title>
-        <link href="assets/css/style.css" rel="stylesheet" text="text/css">
-       
-    </head>
-    <body>
-        
-        <main id = "info">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>    <!-- page. refers to variables stored in the front matter-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    
+            <main id = "info">
             <div id = "alert-container">
                         <section class = "text">
                             <p>
@@ -97,6 +95,30 @@
             <article id = "cheatYourWayThrough" class = "project project-card-visible" name = "all programming" onclick = "expandProject('cheatYourWayThrough')"> <img src = "assets/img/cheat-your-way-through.png">  <br> Cheat Your Way Through</article>
 
 
+            
+            
+            <article class = "project project-card-visible" name = "all" onclick = "expandProject('EduSite')">
+
+                <img src = "assets/img/ToDoAppDesktopLight.png"> <br> Aducational Website
+                
+            </article>
+
+
+            <!-- markdownify is used because the content being shown is written in a markdown file-->
+
+            
+            
+            <article class = "project project-card-visible" name = "all" onclick = "expandProject('TodoApp')">
+
+                <img src = "assets/img/ToDoAppDesktopLight.png"> <br> To Do App
+                
+            </article>
+
+
+            <!-- markdownify is used because the content being shown is written in a markdown file-->
+
+            
+
 
         </section>
 
@@ -104,7 +126,8 @@
 
         <script src = "assets/js/storage.js"> </script>
         <script src = "assets/js/script.js"> </script> 
-        
-
-    </body>
+ <!-- the content present within index.html-->
+    
+    
+  </body>
 </html>

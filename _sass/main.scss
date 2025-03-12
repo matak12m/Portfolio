@@ -1,4 +1,340 @@
-
-.current {
-    color: green
+body {
+    
+    background-image: url(../img/splotches.png);
+    background-size: 100%;
+    
 }
+main{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+h1 {
+    margin-top: 20vh;
+    font-family:sofiaSans;
+    font-size:50pt;
+    font-weight: bold;
+}
+
+section {
+    align-content: center;
+    text-align: center;
+}
+#folder-buttons {
+    text-align: left;
+}
+
+article{
+    align-content: center;
+    max-width: 30vw;
+    text-align: center;
+    font-size: 20pt;
+    font-family: sofiaSans;
+}
+
+#icons-article{
+    display:block;
+    max-height: 50px;
+    min-width: 400px;
+
+}
+
+.icon {
+    width:50px;
+    height:50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5vh;
+}
+
+p{
+    margin-bottom: 7vh;
+    margin:auto;
+}
+
+button {
+    border: 0px;
+    font-family: sofiaSans;
+    font-size: 25pt;
+    border-radius: 10px 10px 0px 0px;
+}
+.textButton {
+    border-radius: 10px;
+    font-size: 20pt;
+    background-color: none;
+}
+
+#alert-container {
+    font-family: sofiaSans;
+    background-color: pink;
+    align-self: center;
+    text-align: center;
+    font-size: 20pt;
+    width: 300px;
+    min-height: 9vh;
+    height:fit-content;
+    border-radius: 10px;
+    
+    position:fixed;
+    inset:top;
+    visibility:hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+button:hover{
+    background-color: grey;
+}
+
+#all-button{
+    background-color: rgb(255,204,0);
+
+}
+#all-button:hover{
+    background-color: rgb(192, 154, 0);
+}
+
+#art-button{
+    background-color: red;
+}
+#art-button:hover {
+    background-color: rgb(192, 0, 0);
+}
+
+#design-button{
+    background-color: pink;
+}
+#design-button:hover {
+    background-color: rgb(188, 138, 146);
+}
+
+#programming-button{
+    background-color: rgb(27, 192, 27);
+}
+#programming-button:hover {
+    background-color: rgb(20, 135, 20);
+}
+
+#other-button{
+    background-color: lightblue;
+}
+#other-button:hover {
+    background-color: rgb(121, 151, 161);
+}
+#back-button {
+    float:right;
+    background-color: red;
+    visibility: hidden;
+}
+#back-button:hover {
+    background-color: rgb(192, 0, 0);
+}
+
+
+#projects-space {
+    background-color: rgb(255,204,0);
+    width: 100%;
+    min-height: 90vh;
+    height:fit-content;
+    border-radius: 0px 10px 10px 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: flex-start;
+
+    transition-duration: 0.25s;
+
+
+}
+
+img {
+    max-height: 25vh;
+    max-width: 30vw;
+
+}
+
+
+#img1 {
+    margin:auto;
+    max-height: none;
+    float: left;
+    width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-bottom: 50px;
+}
+
+#img-large {
+    width: 95%;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    float: left;
+    padding-top: 50px;
+}
+
+.project {
+    background-color: aliceblue;
+    display:block;
+    min-width: 100px;
+    min-height: 100px;
+    
+    max-height: 30vh;
+    
+
+}
+
+.project-card-visible {
+    
+    margin: 10px;
+    max-width: 30vw;
+}
+
+.project-card-hidden {
+    display: none;
+    visibility: hidden;
+  
+}
+
+.project-card-expanded {
+
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:95%;
+    height:100%;
+    max-width: none;
+    max-height: none;
+   
+}
+
+.textExpanded {
+    float: left;
+    width: 45%;
+    margin:2.5%;
+    height:fit-content;
+}
+
+@font-face {
+    font-family:sofiaSans;
+    src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
+}
+
+@media(max-width: 805px) {
+
+    body {
+        background-image: url(../img/splotchesMobile.png);
+        
+    }
+
+    main {
+        display:block;
+
+        flex-wrap:unset;
+        align-content:center;
+        flex-direction:unset;
+        text-align: center;
+        
+
+    }
+    section {
+        text-align: center;
+
+    }
+    .text {
+        
+        margin-right: 10vw;
+        margin-right: 10vw;
+    }
+    #header-icons {
+        align-items: center;
+    }
+    button {
+        text-align: center;
+    }
+    #all-button {
+        width:12.5vw;
+    }
+    #art-button {
+        width: 12.5vw;
+    }
+    #design-button {
+        width: 17.5vw;
+    }
+    #programming-button {
+        width: 30vw;
+    }
+    #other-button {
+        width: 17.5vw;
+    }
+
+
+    h1 {
+        margin: 100%
+
+    }
+
+    #icons-article {
+        margin:auto;
+    }
+
+    article {
+        font-size: 25pt;
+    }
+    p{
+        width: 90vw;
+    }
+
+    #projects-space {
+        display:block;
+        flex-direction: unset;
+        flex-wrap: unset;
+
+    }
+
+    .project-card-visible {
+        width: 90vw;
+        max-width: none;
+        max-height: 100vh;
+    }
+    .textExpanded {
+        float: none;
+        width: 90vw;
+        margin-right: 10vw;
+    }
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        width: 90vw;
+    }
+    #img1 {
+        max-width: none;
+        max-height: none;
+        margin:auto;
+        float: none;
+        width: 90vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  
+    .project {
+        font-size: 30pt;
+    }
+    
+}
+
+@media(min-width: 1600px) {
+
+    body {
+        background-image: url(../img/splotchesWidescreen.png);
+        
+    }
+
+    }
+
