@@ -1,0 +1,7 @@
+layouts are essentially styles for the html structure of a page. 
+
+If you don't want to copy paste the HTML template for every post page, you can instead make a layout and then declare it in the Front Matter for each page that should use it. 
+
+default.html is the bare-bones html structure
+
+layouts themselves can use layouts, so some use default.html and then build on top of it.

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matt Martinek">
+        <title>Matt Martinek Portfolio</title>
+        <link href="assets/css/style.css" rel="stylesheet" text="text/css">
+       
+    </head>
+    <body>
+        
+        <main id = "info">
+            <div id = "alert-container">
+                        <section class = "text">
+                            <p>
+                                Email copied!
+                            </p>
+                            <button class = "textButton" onclick="closeAlert()" >close</button>
+                        </section>
+
+                    </div>
+                <article>
+            <section id = "header-icons">
+            
+
+                <h1>Matt Martinek</h1>
+
+                </article>
+                <article id = "icons-article">
+
+                <a href = "https://discord.com/channels/@me"><img  class = "icon" src = "assets/img/discord.png" ></a>
+                <img class = "icon" src = "assets/img/envelope.png" onclick="copyEmail()" > 
+                <a href = "https://www.instagram.com/kolanits/"><img class = "icon" src = "assets/img/instagram.png"></a>
+                <a href = "https://github.com/matak12m"><img class = "icon" src = "assets/img/github.png"></a>
+
+                
+            
+                </article>
+            </section>
+            <section class = "text">
+
+                <article>
+                    <p>Hi! you can call me Matt. I'm a student, artist, programmer, and designer. 
+                    I'm currently studying Digital Arts and Design,
+                    and I consider myself a  Jack-of-all-trades. </p> <br>
+
+                   <p> Scroll down to see some of my work! </p> <br>
+
+                    <p>Or click  <button class = "textButton" onclick = "aboutMe()">here</button> <span id = "learnMore"> to learn more about me. </span> </p>
+                </article>
+                <article id = "aboutMe" style = "margin-top: 100px; margin-bottom: 200px;">
+
+                </article>
+ 
+            </section>
+        </main>
+
+
+        <section id = "folder-buttons">
+
+        <button id = "all-button" onclick="sortProjects('all')" > All </button>
+        <button id = "art-button" onclick="sortProjects('art')"> Art </button>
+        <button id = "design-button" onclick="sortProjects('design')"> Design </button>
+        <button id = "programming-button" onclick="sortProjects('programming')"> Programming </button>
+        <button id = "other-button" onclick="sortProjects('other')"> Other </button>
+        <button id = "back-button" >Back</button>
+        </section>
+
+
+        <section id = "projects-space">
+            
+            
+                
+         
+            <article id = "ToDoApp" class = "project project-card-visible" name = "all design other" onclick = "expandProject('ToDoApp')"> <img src = "assets/img/ToDoAppDesktopLight.png"> <br> To-Do App design </article>
+            <article id = "EduSite" class = "project project-card-visible" name = "all design" onclick = "expandProject('EduSite')"> <img src = "assets/img/EduSiteThumbnail.png"> <br> Educational Website design </article>
+
+
+
+            <article id = "onTheClock" class = "project project-card-visible" name = "all programming design" onclick = "expandProject('onTheClock')"> <img src = "assets/img/clock.png"> <br>On the Clock</article>
+
+
+
+            <article id = "GGJ24" class = "project project-card-visible" name = "all art design" onclick="expandProject('GGJ24')"> <img src = "assets/img/clowning-around.png"> <br> Global Game Jam 2024</article>
+
+
+            <article id = "Hooked" class = "project project-card-visible" name = "all design" onclick = "expandProject('Hooked')"> <img src = "assets/img/shopWithItems.png"> <br> Hooked!</article>
+
+
+            <article id = "GGJ23" class = "project project-card-visible" name = "all other" onclick = "expandProject('GGJ23')"> <img src = "assets/img/Erootica.png"> <br>Global Game Jam 2023 </article>
+       
+            <article id = "ThreeDArt" class = "project project-card-visible" name = "all art design" onclick = "expandProject('ThreeDArt')"> <img src = "assets/img/3DGreenhouse.png"> <br> 3D modelling project </article>
+            
+            
+            
+            <article id = "cheatYourWayThrough" class = "project project-card-visible" name = "all programming" onclick = "expandProject('cheatYourWayThrough')"> <img src = "assets/img/cheat-your-way-through.png">  <br> Cheat Your Way Through</article>
+
+
+
+        </section>
+
+        
+
+        <script src = "assets/js/storage.js"> </script>
+        <script src = "assets/js/script.js"> </script> 
+        
+
+    </body>
+</html>
