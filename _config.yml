@@ -1,0 +1,21 @@
+collections:
+  authors:
+    output: true
+
+# defaults declares which layout and values should be in the Front Matter by default
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
