@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Matt Martinek">
-        <title>Matt Martinek Portfolio</title>
-        <link href="assets/css/style.css" rel="stylesheet" text="text/css">
-       
-    </head>
-    <body>
+---
+layout: default
+title: Portfolio
+---
+
         
         <main id = "info">
             <div id = "alert-container">
@@ -97,6 +91,19 @@
             <article id = "cheatYourWayThrough" class = "project project-card-visible" name = "all programming" onclick = "expandProject('cheatYourWayThrough')"> <img src = "assets/img/cheat-your-way-through.png">  <br> Cheat Your Way Through</article>
 
 
+            {% for project in site.projects %}
+            
+            <article class = "project project-card-visible" name = "all" onclick = "expandProject('{{project.filename}}')">
+
+                <img src = "assets/img/ToDoAppDesktopLight.png"> <br> {{project.name}}
+                
+            </article>
+
+
+            <!-- markdownify is used because the content being shown is written in a markdown file-->
+
+            {% endfor %}
+
 
         </section>
 
@@ -104,7 +111,3 @@
 
         <script src = "assets/js/storage.js"> </script>
         <script src = "assets/js/script.js"> </script> 
-        
-
-    </body>
-</html>
