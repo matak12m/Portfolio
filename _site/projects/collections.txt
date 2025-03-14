@@ -1,0 +1,5 @@
+this is a collection declared in the config. by default, collections don't output pages, but that can be changed with output: true in config. 
+
+
+collections can have images or similar, potentially even pre-build segments of a webpage (like a div with project information?)
+
