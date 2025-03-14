@@ -29,7 +29,9 @@ section {
 
 article {
   align-content: center;
-  max-width: 30vw;
+  width: 30vw;
+  border-radius: 1vw;
+  border-color: rgb(192, 154, 0);
   text-align: center;
   font-size: 20pt;
   font-family: sofiaSans;
@@ -167,9 +169,9 @@ img {
 }
 
 #img-large {
-  width: 95%;
+  width: 100%;
   height: auto;
-  max-height: none;
+  max-height: 750px;
   max-width: none;
   float: left;
   padding-top: 50px;
@@ -214,7 +216,7 @@ img {
   font-family: sofiaSans;
   src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
 }
-@media (max-width: 805px) {
+@media (max-width: 930px) {
   body {
     background-image: url(../img/splotchesMobile.png);
   }
@@ -227,16 +229,17 @@ img {
   }
   section {
     text-align: center;
+    margin: 0%;
   }
-  .text {
-    margin-right: 10vw;
-    margin-right: 10vw;
+  #folder-buttons {
+    height: 50px;
   }
   #header-icons {
     align-items: center;
   }
   button {
     text-align: center;
+    height: 50px;
   }
   #all-button {
     width: 12.5vw;
@@ -253,14 +256,29 @@ img {
   #other-button {
     width: 17.5vw;
   }
+  .textButton {
+    height: 50px;
+    width: 80px;
+    font-size: 25pt;
+  }
   h1 {
-    margin: 100%;
+    margin-left: 110%;
+    text-align: center;
   }
   #icons-article {
     margin: auto;
+    min-height: none;
+    min-width: none;
   }
   article {
     font-size: 25pt;
+    min-height: 60vh;
+  }
+  #aboutMe {
+    text-align: center;
+    width: 50%;
+    display: inline-flex;
+    align-self: center;
   }
   p {
     width: 90vw;
@@ -282,8 +300,9 @@ img {
   }
   img {
     max-width: 90vw;
-    max-height: 90vh;
-    width: 90vw;
+    max-height: 60vh;
+    width: auto;
+    min-width: 400px;
   }
   #img1 {
     max-width: none;
@@ -294,13 +313,14 @@ img {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .icon {
+    width: 120px;
+    height: 120px;
+    min-width: 0px;
+  }
   .project {
     font-size: 30pt;
-  }
-}
-@media (min-width: 1600px) {
-  body {
-    background-image: url(../img/splotchesWidescreen.png);
+    min-height: 60vh;
   }
 }
 

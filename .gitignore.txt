@@ -50,7 +50,12 @@ _testmain.go
 # Visual Studio files:
 *.vs
 
+<<<<<<< HEAD
 # Jekyll site build:
 
+_site
+
+=======
+# jekyll site build
 _site
 
