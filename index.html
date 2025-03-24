@@ -64,32 +64,6 @@ title: Portfolio
 
         <section id = "projects-space">
             
-            
-                
-         
-            <article id = "ToDoApp" class = "project project-card-visible" name = "all design other" onclick = "expandProject('ToDoApp')"> <img src = "assets/img/ToDoAppDesktopLight.png"> <br> To-Do App design </article>
-            <article id = "EduSite" class = "project project-card-visible" name = "all design" onclick = "expandProject('EduSite')"> <img src = "assets/img/EduSiteThumbnail.png"> <br> Educational Website design </article>
-
-
-
-            <article id = "onTheClock" class = "project project-card-visible" name = "all programming design" onclick = "expandProject('onTheClock')"> <img src = "assets/img/clock.png"> <br>On the Clock</article>
-
-
-
-            <article id = "GGJ24" class = "project project-card-visible" name = "all art design" onclick="expandProject('GGJ24')"> <img src = "assets/img/clowning-around.png"> <br> Global Game Jam 2024</article>
-
-
-            <article id = "Hooked" class = "project project-card-visible" name = "all design" onclick = "expandProject('Hooked')"> <img src = "assets/img/shopWithItems.png"> <br> Hooked!</article>
-
-
-            <article id = "GGJ23" class = "project project-card-visible" name = "all other" onclick = "expandProject('GGJ23')"> <img src = "assets/img/Erootica.png"> <br>Global Game Jam 2023 </article>
-       
-            <article id = "ThreeDArt" class = "project project-card-visible" name = "all art design" onclick = "expandProject('ThreeDArt')"> <img src = "assets/img/3DGreenhouse.png"> <br> 3D modelling project </article>
-            
-            
-            
-            <article id = "cheatYourWayThrough" class = "project project-card-visible" name = "all programming" onclick = "expandProject('cheatYourWayThrough')"> <img src = "assets/img/cheat-your-way-through.png">  <br> Cheat Your Way Through</article>
-
 
             {% for project in site.projects %}
             
@@ -100,7 +74,7 @@ title: Portfolio
             </article>
 
 
-            <!-- markdownify is used because the content being shown is written in a markdown file-->
+            <!-- markdownify is used when the content being shown is written in a markdown file-->
 
             {% endfor %}
 
@@ -109,5 +83,4 @@ title: Portfolio
 
         
 
-        <script src = "assets/js/storage.js"> </script>
         <script src = "assets/js/script.js"> </script> 
