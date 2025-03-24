@@ -106,78 +106,19 @@ function expandProject(projectCard) {
     //add event listener for clicks outside the project card space
     //change css of all other project cards to hide them
     
-  
+      currentProject.className = 'project project-card-expanded' //expand the proper card
     
     currentProject = document.getElementById(projectCard);
 
+    for (i = 0; i < allProj.length; i++){
 
-    currentProject.className = 'project project-card-expanded' //expand the proper card
-
-    if (projectCard.includes("GGJ24")) {      //change the html of the expanded card
-
-        storedHTML = '<img src = "assets/img/clowning-around.png"> <br> Global Game Jam 2024'  //stores the minimized version of the card
-        currentProject.innerHTML = ClowningAroundHTML
-
+        if(allProj[i].id == projectCard)
+            {
+                storedHTML = allProj[i].outerHTML;
+                currentProject.innerHTML = ClowningAroundHTML;
+            }
 
     }
-    else if (projectCard.includes("GGJ23")) {
-
-        
-        storedHTML = '<img src = "assets/img/Erootica.png"> <br>Global Game Jam 2023'  //stores the minimized version of the card
-        currentProject.innerHTML = ErooticaHTML;
-
-        
-    }
-    else if (projectCard.includes("Hooked")) {
-
-
-        
-        storedHTML = '<img src = "assets/img/shopWithItems.png"> <br> Hooked!'  //stores the minimized version of the card
-        currentProject.innerHTML = HookedHTML;
-
-        
-    }
-    else if (projectCard.includes("onTheClock")) {
-
-        
-        storedHTML = '<img src = "assets/img/clock.png"> <br>On the Clock'  //stores the minimized version of the card
-        currentProject.innerHTML = OnTheClockHTML;
-
-        
-    }
-    else if (projectCard.includes("cheatYourWayThrough")) {
-
-        
-        storedHTML = '<img class = "halfImg" src = "assets/img/player-sprite cropped.png"> <img class = "halfImg" src = "assets/img/desk and chair croopped.png"> <br> Cheat Your Way Through'  //stores the minimized version of the card
-        currentProject.innerHTML = CheatYourWayThroughHTML;
-
-        
-    }
-    else if (projectCard.includes("ThreeDArt")) {
-
-        
-        storedHTML =  '<img src = "assets/img/3DGreenhouse.png"> <br> 3D modelling project'  //stores the minimized version of the card
-        currentProject.innerHTML = ThreeDArtHTML;
-
-        
-    }
-    else if (projectCard.includes("ToDoApp")) {
-
-        
-        storedHTML =  '<img src = "assets/img/ToDoAppDesktopLight.png"> <br> To-Do App design'  //stores the minimized version of the card
-        currentProject.innerHTML = ToDoAppHTML;
-
-        
-    }
-    else if (projectCard.includes("EduSite")) {
-
-        
-        storedHTML =  ' <img src = "assets/img/EduSiteThumbnail.png"> <br> Educational Website design'  //stores the minimized version of the card
-        currentProject.innerHTML = EduSiteHTML;
-
-        
-    }
-    
     
 
     for (i = 0; i < allProj.length; i++) {  //hides all other project cards

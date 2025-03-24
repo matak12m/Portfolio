@@ -29,13 +29,9 @@ section {
 
 article {
   align-content: center;
-<<<<<<< HEAD
   width: 30vw;
   border-radius: 1vw;
   border-color: rgb(192, 154, 0);
-=======
-  max-width: 30vw;
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   text-align: center;
   font-size: 20pt;
   font-family: sofiaSans;
@@ -173,18 +169,16 @@ img {
 }
 
 #img-large {
-<<<<<<< HEAD
-  width: 100%;
+  width: auto;
   height: auto;
   max-height: 750px;
-=======
-  width: 95%;
-  height: auto;
-  max-height: none;
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
-  max-width: none;
-  float: left;
+  max-width: 100%;
   padding-top: 50px;
+}
+
+#alert-container {
+  width: 100vw;
+  font-size: 25pt;
 }
 
 .project {
@@ -220,17 +214,14 @@ img {
   width: 45%;
   margin: 2.5%;
   height: fit-content;
+  max-width: 95%;
 }
 
 @font-face {
   font-family: sofiaSans;
   src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
 }
-<<<<<<< HEAD
 @media (max-width: 930px) {
-=======
-@media (max-width: 805px) {
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   body {
     background-image: url(../img/splotchesMobile.png);
   }
@@ -243,27 +234,17 @@ img {
   }
   section {
     text-align: center;
-<<<<<<< HEAD
     margin: 0%;
   }
   #folder-buttons {
     height: 50px;
-=======
-  }
-  .text {
-    margin-right: 10vw;
-    margin-right: 10vw;
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   }
   #header-icons {
     align-items: center;
   }
   button {
     text-align: center;
-<<<<<<< HEAD
     height: 50px;
-=======
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   }
   #all-button {
     width: 12.5vw;
@@ -272,22 +253,28 @@ img {
     width: 12.5vw;
   }
   #design-button {
-    width: 17.5vw;
+    width: fit-content;
   }
   #programming-button {
-    width: 30vw;
+    width: fit-content;
   }
   #other-button {
-    width: 17.5vw;
+    width: fit-content;
   }
-<<<<<<< HEAD
   .textButton {
-    height: 50px;
-    width: 80px;
+    height: 65px;
+    width: 90px;
     font-size: 25pt;
   }
+  #back-button {
+    position: sticky;
+    border-radius: 10px;
+    width: 100px;
+    height: 75px;
+    font-size: 8vw;
+  }
   h1 {
-    margin-left: 110%;
+    margin-left: 30vw;
     text-align: center;
   }
   #icons-article {
@@ -304,16 +291,6 @@ img {
     width: 50%;
     display: inline-flex;
     align-self: center;
-=======
-  h1 {
-    margin: 100%;
-  }
-  #icons-article {
-    margin: auto;
-  }
-  article {
-    font-size: 25pt;
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   }
   p {
     width: 90vw;
@@ -331,29 +308,23 @@ img {
   .textExpanded {
     float: none;
     width: 90vw;
-    margin-right: 10vw;
+    margin-right: 20vw;
   }
   img {
-    max-width: 90vw;
-<<<<<<< HEAD
+    max-width: 80vw;
     max-height: 60vh;
     width: auto;
-    min-width: 400px;
-=======
-    max-height: 90vh;
-    width: 90vw;
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
   }
   #img1 {
-    max-width: none;
+    max-width: 100%;
     max-height: none;
     margin: auto;
     float: none;
     width: 90vw;
     padding-left: 0px;
     padding-right: 0px;
+    min-height: 0px;
   }
-<<<<<<< HEAD
   .icon {
     width: 120px;
     height: 120px;
@@ -362,15 +333,49 @@ img {
   .project {
     font-size: 30pt;
     min-height: 60vh;
-=======
-  .project {
-    font-size: 30pt;
   }
 }
-@media (min-width: 1600px) {
-  body {
-    background-image: url(../img/splotchesWidescreen.png);
->>>>>>> 0c7137748cd64239f832942462f39da9fb5d016a
+@media (max-width: 595px) {
+  #all-button {
+    font-size: 4.5vw;
+  }
+  #art-button {
+    font-size: 4.5vw;
+  }
+  #design-button {
+    font-size: 4.5vw;
+  }
+  #programming-button {
+    font-size: 4.5vw;
+  }
+  #other-button {
+    font-size: 4.5vw;
+  }
+  section {
+    font-size: 20pt;
+  }
+  button {
+    max-height: 7vh;
+    max-width: 20vw;
+  }
+  .textButton {
+    font-size: 20pt;
+  }
+  .textExpanded {
+    margin-right: 10vw;
+  }
+  h1 {
+    margin: 20vw;
+    max-width: 100%;
+    font-size: 45pt;
+  }
+  #icons-article {
+    max-width: 100vw;
+    min-width: 75vw;
+  }
+  .icon {
+    max-width: 25vw;
+    max-height: 25vw;
   }
 }
 
