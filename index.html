@@ -66,17 +66,22 @@ title: Portfolio
             
 
             {% for project in site.projects %}
+        
             
-            <article class = "project project-card-visible" name = "all" onclick = "expandProject('{{project.filename}}')">
+          
 
-                <img src = "assets/img/ToDoAppDesktopLight.png"> <br> {{project.name}}
+            <article class = "project project-card-visible" name = "{{project.category}}" onclick = "expandProject('{{project.filename}}')" id = "{{project.filename}}">
+
+                <img src = "assets/img/{{project.filename}}.png"> <br> {{project.name}}
                 
             </article>
+
 
 
             <!-- markdownify is used when the content being shown is written in a markdown file-->
 
             {% endfor %}
+
 
 
         </section>

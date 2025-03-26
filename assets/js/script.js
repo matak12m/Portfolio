@@ -23,6 +23,7 @@ let allProj = document.getElementsByClassName("project"); //project is a standal
 console.log(allProj);
 
 let projName;
+let projClass;
 let CurrentProjType = "all"
 
 
@@ -58,6 +59,9 @@ function sortProjects(projType) {
                 //console.log("iterating");
 
                 projName = allProj[i].getAttribute("name");
+
+
+               
 
                 if (projName.includes(projType)){  //checks if the name of the project includes the keyword
 
@@ -97,7 +101,8 @@ function closeAlert(){
 }
 
 let currentProject; //stores the current element being expanded
-let storedHTML;
+
+
 
 function expandProject(projectCard) {
     console.log("expanding project")
@@ -106,27 +111,31 @@ function expandProject(projectCard) {
     //add event listener for clicks outside the project card space
     //change css of all other project cards to hide them
     
-      currentProject.className = 'project project-card-expanded' //expand the proper card
+      //currentProject.className = 'project project-card-expanded' //expand the proper card
     
     currentProject = document.getElementById(projectCard);
 
-    for (i = 0; i < allProj.length; i++){
+    // for (i = 0; i < allProj.length; i++){
 
-        if(allProj[i].id == projectCard)
-            {
-                storedHTML = allProj[i].outerHTML;
-                currentProject.innerHTML = ClowningAroundHTML;
-            }
+    //     if(allProj[i].id == projectCard)
+    //         {
 
-    }
+
+    //         }
+
+    // }
     
+
 
     for (i = 0; i < allProj.length; i++) {  //hides all other project cards
            
         projName = allProj[i].getAttribute("id");
+        projClass = allProj[i].getAttribute("class")
+    
 
-        if (projName.includes(projectCard)){  
-            //do nothing
+        if (projName.includes(projectCard) && projName.includes("expanded")){  
+            allProj[i].className = 'project project-card-visible';
+            allProj[i].className.innerHTML = 
         }
         else {
             
@@ -168,7 +177,7 @@ function minimizeProject() {
         }
     } 
 
-    currentProject.innerHTML = storedHTML;
+
 
     mainInfo.removeEventListener("click",minimizeProject); 
     buttonsSection.removeEventListener("click",minimizeProject);

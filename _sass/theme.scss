@@ -190,17 +190,14 @@ img {
     background-color: aliceblue;
     display:block;
     min-width: 100px;
-    min-height: 100px;
-    
-    max-height: 30vh;
-    
-
+    height: 30vh;
 }
 
 .project-card-visible {
     
     margin: 10px;
     max-width: 30vw;
+    height: 30vh;
 }
 
 .project-card-hidden {
