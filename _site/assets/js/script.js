@@ -26,6 +26,10 @@ let projName;
 let projClass;
 let CurrentProjType = "all"
 
+let collection = fetch()
+
+
+
 
 function sortProjects(projType) {
     //changes the visibility of projects in the "projects" space depending on what type they are
@@ -135,7 +139,10 @@ function expandProject(projectCard) {
 
         if (projName.includes(projectCard) && projName.includes("expanded")){  
             allProj[i].className = 'project project-card-visible';
-            allProj[i].className.innerHTML = 
+            allProj[i].className.innerHTML = " "
+                
+
+
         }
         else {
             

@@ -1,6 +1,5 @@
 body {
-    
-    background-image: url(../img/splotches.png);
+    background-image: url(../img/splotchesTest.png);
     background-size: 100%;
 }
 main{
@@ -24,18 +23,30 @@ section {
     align-content: center;
     text-align: center;
 }
+
+.text {
+    align-items: center;
+    padding-right: 30vw;
+    padding-left: 30vw;
+}
+
 #folder-buttons {
     text-align: left;
 }
 
 article{
     align-content: center;
-    width: 30vw;
     border-radius: 1vw;
     border-color:rgb(192, 154, 0);
     text-align: center;
     font-size: 20pt;
     font-family: sofiaSans;
+}
+
+.description {
+   
+    text-align: center;
+    align-self: center;
 }
 
 #icons-article{
@@ -57,6 +68,7 @@ p{
     margin-bottom: 7vh;
     margin:auto;
 }
+
 
 button {
     border: 0px;
@@ -189,7 +201,7 @@ img {
 .project {
     background-color: aliceblue;
     display:block;
-    min-width: 100px;
+    min-width: 30vw;
     height: 30vh;
 }
 
@@ -231,10 +243,18 @@ img {
     src: url(SofiaSans-VariableFont_wght.ttf) format("opentype");
 }
 
+
+@media(min-width:2000px) {
+    body {
+        background-image: url(../img/splotchesWidescreenTest.png);
+        
+    }
+}
+
 @media(max-width: 930px) {
 
     body {
-        background-image: url(../img/splotchesMobile.png);
+        background-image: url(../img/splotchesMobileTest.png);
         
     }
 
@@ -282,7 +302,6 @@ img {
     .textButton {
         height:65px;
         width: 90px;
-        font-size: 25pt;
     }
     #back-button {
         position:sticky;
@@ -295,28 +314,27 @@ img {
 
 
     h1 {
-        margin-left: 30vw;
+        margin-left:0px;
         text-align: center;
 
 
     }
 
+    .text {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
     #icons-article {
-        margin:auto;
-        min-height: none;
-        min-width: none;
+        min-height: 10vh;
+        max-height: 15vh;
     }
 
     article {
         font-size: 25pt;
         min-height: 60vh;
     }
-    #aboutMe {
-        text-align: center;
-        width: 50%;
-        display:inline-flex;
-        align-self: center;
-    }
+
     p{
         width: 90vw;
     }
