@@ -114,10 +114,10 @@ button:hover{
 }
 
 #art-button{
-    background-color: red;
+    background-color: rgb(226, 45, 45);
 }
 #art-button:hover {
-    background-color: rgb(192, 0, 0);
+    background-color: #C60300;
 }
 
 #design-button{
@@ -128,21 +128,21 @@ button:hover{
 }
 
 #programming-button{
-    background-color: rgb(27, 192, 27);
+    background-color: #32cc65;
 }
 #programming-button:hover {
-    background-color: rgb(20, 135, 20);
+    background-color: #00C642;
 }
 
 #other-button{
-    background-color: lightblue;
+    background-color: #3b44e7;
 }
 #other-button:hover {
-    background-color: rgb(121, 151, 161);
+    background-color: #121CFF;
 }
 #back-button {
     float:right;
-    background-color: red;
+    background-color: #C60300;
     visibility: hidden;
 
 }

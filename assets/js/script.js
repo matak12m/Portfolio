@@ -45,17 +45,17 @@ function sortProjects(projType) {
                 projectSpace.style.backgroundColor = 'rgb(255,204,0)';
             }
             else if (projType.includes('art')) {
-                projectSpace.style.backgroundColor = 'red';
+                projectSpace.style.backgroundColor = 'rgb(226, 45, 45)';
             }
             else if (projType.includes('design')) {
                 projectSpace.style.backgroundColor = 'pink';
 
             }
             else if (projType.includes('programming')) {
-                projectSpace.style.backgroundColor = 'rgb(27, 192, 27)';
+                projectSpace.style.backgroundColor = '#32cc65';
             }
             else if (projType.includes('other')) {
-                projectSpace.style.backgroundColor = 'lightblue';
+                projectSpace.style.backgroundColor = '#3b44e7';
             }
 
 
