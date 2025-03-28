@@ -10,18 +10,18 @@ let mainInfo = document.getElementById("info")
 let buttonsSection = document.getElementById("folder-buttons")
 let projectsSection = document.getElementById("projects-space")
 
-let aboutMeArticle = document.getElementById("aboutMe")
+
 let learnMoreText = document.getElementById("learnMore")
 
 let AlertContainer = document.getElementById("alert-container")
 
 let BackButton = document.getElementById("back-button");
 
+let aboutMeArticle = document.getElementById("aboutMeId");
 
 let allProj = document.getElementsByClassName("project"); //projects that aren't expanded - card previews
 let allExpanded = document.getElementsByClassName("expanded") //expanded projects including all the text and images
 
-console.log(allProj);
 
 let projName;
 let projClass;
@@ -205,22 +205,23 @@ function minimizeProject() {
 let aboutMeCounter = 0;
 function aboutMe() {
 
+
     aboutMeCounter++;
 
     if (aboutMeCounter == 1) {
         console.log("showing about me")
-        learnMoreText.innerHTML = ' to learn less about me.' // fun little detail
-       
+        aboutMeArticle.style.visibility = "visible"
 
-        aboutMeArticle.innerHTML = aboutMeHTML; 
+        learnMoreText.innerHTML = "to learn less about me"
 
     }
     else if (aboutMeCounter == 2){
         console.log("hiding about me")
-        learnMoreText.innerHTML = ' to learn more about me.' // fun little detail
-        
 
-        aboutMeArticle.innerHTML = ""
+        aboutMeArticle.style.visibility = "hidden"
+
+        learnMoreText.innerHTML = "to learn more about me"
+
         aboutMeCounter = 0;
 
     }

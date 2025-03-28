@@ -14,5 +14,10 @@ defaults:
       layout: "project"
   - scope:
       path: ""
+      type: "texts"
+    values:
+      layout: "text"
+  - scope:
+      path: ""
     values:
       layout: "default"

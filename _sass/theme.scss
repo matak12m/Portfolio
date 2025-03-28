@@ -44,9 +44,16 @@ article{
 }
 
 .description {
-   
+   font-family:sofiaSans;
     text-align: center;
     align-self: center;
+
+}
+
+#aboutMeId {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    visibility: hidden;
 }
 
 #icons-article{

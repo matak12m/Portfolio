@@ -42,12 +42,18 @@ title: Portfolio
 
                    <p class = "vertical"> Scroll down to see some of my work! </p> <br>
 
-                    <p class = "vertical"> Or click  <button id = "aboutMeButton"class = "textButton" onclick = "aboutMe()">here</button> to learn more about me. </p>
+                    <p class = "vertical"> Or click  <button id = "aboutMeButton"class = "textButton" onclick = "aboutMe()">here</button> <span id = "learnMore">to learn more about me.</span> </p>
                 </article>
-                <article class = "description" style = "margin-top: 100px; margin-bottom: 200px;">
+                
+                 
 
+                {%for text in site.texts%}
+                <article id = "aboutMeId" class = "description" style = "visibility:hidden" >
+                    {{text.content}}
                 </article>
- 
+                {%endfor%}
+
+                  
             </section>
         </main>
 
