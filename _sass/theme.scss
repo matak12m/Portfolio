@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/splotchesTest.png);
+    background-image: url(../img/splotchesDarkmodeTest.png);
     background-size: 100%;
 }
 main{
@@ -205,6 +205,7 @@ img {
     height: 30vh;
 }
 
+
 .project-card-visible {
     
     margin: 10px;
@@ -229,6 +230,26 @@ img {
     max-height: none;
    
 }
+
+.expanded {
+    background-color: aliceblue;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:95%;
+    height:100%;
+    max-width: none;
+    max-height: none;
+}
+
+.expanded-hidden {
+    display: none;
+    visibility: hidden;
+  
+}
+
+
 
 .textExpanded {
     float: left;

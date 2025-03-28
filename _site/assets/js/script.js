@@ -18,7 +18,8 @@ let AlertContainer = document.getElementById("alert-container")
 let BackButton = document.getElementById("back-button");
 
 
-let allProj = document.getElementsByClassName("project"); //project is a standalone class only for the purposes of this array - may change later
+let allProj = document.getElementsByClassName("project"); //projects that aren't expanded - card previews
+let allExpanded = document.getElementsByClassName("expanded") //expanded projects including all the text and images
 
 console.log(allProj);
 
@@ -26,7 +27,6 @@ let projName;
 let projClass;
 let CurrentProjType = "all"
 
-let collection = fetch()
 
 
 
@@ -63,10 +63,10 @@ function sortProjects(projType) {
                 //console.log("iterating");
 
                 projName = allProj[i].getAttribute("name");
-
+                className = allProj[i].getAttribute("class");
 
                
-
+                
                 if (projName.includes(projType)){  //checks if the name of the project includes the keyword
 
                     
@@ -80,8 +80,12 @@ function sortProjects(projType) {
                     allProj[i].className = 'project project-card-hidden';
                     //console.log("making a project hidden");
                 }
+
+                allExpanded[i].className = 'expanded expanded-hidden';
+
             }
             
+
 
 }
 
@@ -133,20 +137,22 @@ function expandProject(projectCard) {
 
     for (i = 0; i < allProj.length; i++) {  //hides all other project cards
            
-        projName = allProj[i].getAttribute("id");
-        projClass = allProj[i].getAttribute("class")
-    
+        allProj[i].className = "project project-card-hidden"
 
-        if (projName.includes(projectCard) && projName.includes("expanded")){  
-            allProj[i].className = 'project project-card-visible';
-            allProj[i].className.innerHTML = " "
-                
+        projName = allExpanded[i].getAttribute("id");
+        projClass = allExpanded[i].getAttribute("class")
+
+
+        if (projName.includes(projectCard)){  
+            allExpanded[i].className = 'expanded expanded-visible';
+                        console.log("found the right expanded card!")
 
 
         }
         else {
             
-            allProj[i].className = 'project project-card-hidden';
+            allExpanded[i].className = 'expanded expanded-hidden';
+            console.log("hiding project card")
            
         }
     }
@@ -182,7 +188,11 @@ function minimizeProject() {
             allProj[i].className = 'project project-card-hidden';
             //console.log("making a project hidden");
         }
-    } 
+
+        allExpanded[i].className = "expanded expanded-hidden"
+
+        
+        } 
 
 
 
