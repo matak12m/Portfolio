@@ -1,0 +1,27 @@
+collections:
+  projects:
+    output: true
+  texts:
+    output: true
+
+# defaults declares which layout and values should be in the Front Matter by default
+
+root: /Portfolio
+
+url: /https://matak12m.github.io
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "texts"
+    values:
+      layout: "text"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

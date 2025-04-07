@@ -1,0 +1,104 @@
+---
+layout: default
+title: Portfolio
+---
+
+        
+        <main id = "info">
+            <div id = "alert-container">
+                        <section class = "text">
+                            <p>
+                                Email copied!
+                            </p>
+                            <button class = "textButton" onclick="closeAlert()" >close</button>
+                        </section>
+
+                    </div>
+                
+            <section id = "header-icons">
+            
+
+                <h1>Matt Martinek</h1>
+
+               
+                <article id = "icons-article">
+
+                <a href = "https://discord.com/channels/@me"><img  class = "icon" src = "assets/img/discord.png" ></a>
+                <img class = "icon" src = "assets/img/envelope.png" onclick="copyEmail()" > 
+                <a href = "https://www.instagram.com/kolanits/"><img class = "icon" src = "assets/img/instagram.png"></a>
+                <a href = "https://github.com/matak12m"><img class = "icon" src = "assets/img/github.png"></a>
+
+                
+            
+                </article>
+            </section>
+
+            <section class = "text">
+
+                <article class = "description">
+                    <p class = "vertical">Hi! you can call me Matt. I'm a student, artist, programmer, and designer. 
+                    I'm currently studying Digital Arts and Design,
+                    and I consider myself a  Jack-of-all-trades. </p> <br>
+
+                   <p class = "vertical"> Scroll down to see some of my work! </p> <br>
+
+                    <p class = "vertical"> Or click  <button id = "aboutMeButton"class = "textButton" onclick = "aboutMe()">here</button> <span id = "learnMore">to learn more about me.</span> </p>
+                </article>
+                
+                 
+
+                {%for text in site.texts%}
+                <article id = "aboutMeId" class = "description" style = "visibility:hidden" >
+                    {{text.content}}
+                </article>
+                {%endfor%}
+
+                  
+            </section>
+        </main>
+
+
+        <section id = "folder-buttons">
+
+        <button id = "all-button" onclick="sortProjects('all')" > All </button>
+        <button id = "art-button" onclick="sortProjects('art')"> Art </button>
+        <button id = "design-button" onclick="sortProjects('design')"> Design </button>
+        <button id = "programming-button" onclick="sortProjects('programming')"> Programming </button>
+        <button id = "other-button" onclick="sortProjects('other')"> Other </button>
+        <button id = "back-button" >Back</button>
+        </section>
+
+
+        <section id = "projects-space">
+            
+
+            {% for project in site.projects %}
+        
+            
+          
+
+            <article class = "project project-card-visible" name = "{{project.category}}" onclick = "expandProject('{{project.filename}}')" id = "{{project.filename}}">
+
+                <img src = "assets/img/{{project.filename}}.png"> <br> {{project.name}}
+                
+            </article>
+
+            <article class = "expanded expanded-hidden" name = "{{project.category}}" onclick = "expandProject('{{project.filename}}')" id = "{{project.filename}}">
+
+                {{project.content}}
+                
+            </article>
+
+
+
+            <!-- markdownify is used when the content being shown is written in a markdown file-->
+
+            {% endfor %}
+
+
+
+        </section>
+
+        
+
+        <script src = "assets/js/script.js"> </script> 
