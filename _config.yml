@@ -10,6 +10,8 @@ root: /Portfolio
 
 url: /https://matak12m.github.io
 
+baseurl: /matak12m
+
 defaults:
   - scope:
       path: ""
