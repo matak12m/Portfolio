@@ -8,9 +8,9 @@ collections:
 
 root: /Portfolio
 
+url: /
 
-
-baseurl: https://github.com/matak12m
+baseurl: matak12m
 
 defaults:
   - scope:
