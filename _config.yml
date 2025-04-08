@@ -6,7 +6,7 @@ collections:
 
 # defaults declares which layout and values should be in the Front Matter by default
 
-root: /Portfolio
+root: /
 
 url: /https://matak12m.github.io
 
